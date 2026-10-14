@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Epilogue Life - Plan Your Third Age | Third Age &amp; End-of-Life Planning Companion</title>
-<meta name="description" content="Plan your third age with dignity and care. Document your wishes, values, care requests and heartfelt messages for your loved ones, all in one guided, private plan.">
+<title>Epilogue Life - A Free Agent for Your Third Age | Plan Before You Need To</title>
+<meta name="description" content="Epilogue Life is a free, open agent for Hermes Agent: guided questions, gentle daily prompts, and a complete plan for your third age that your family will thank you for. Start early, while it is easy to start.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +25,8 @@
   .nav { display:flex; align-items:center; justify-content:space-between; gap:18px; padding-top:15px; padding-bottom:15px; }
   .wordmark { display:flex; align-items:center; gap:10px; text-decoration:none; font-family:"Fraunces",serif; font-weight:600; font-size:1.15rem; }
   .wordmark svg { flex:0 0 auto; }
-  nav.links { display:flex; gap:20px; }
-  nav.links a { text-decoration:none; font-size:0.85rem; font-weight:500; color:var(--dim); }
+  nav.links { display:flex; gap:18px; }
+  nav.links a { text-decoration:none; font-size:0.83rem; font-weight:500; color:var(--dim); }
   nav.links a:hover { color:var(--cream); }
   .btn { display:inline-block; padding:14px 26px; font:inherit; font-weight:600; font-size:0.92rem; text-decoration:none; background:var(--orange); color:#2b1a12; border:1px solid var(--orange); }
   .btn:hover { background:var(--orange2); border-color:var(--orange2); }
@@ -48,8 +48,9 @@
   .hero .in { display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center; padding-top:84px; padding-bottom:84px; }
   h1 { font-weight:500; font-size:clamp(2.6rem,5.6vw,4.6rem); line-height:1.05; letter-spacing:-0.01em; }
   h1 em { font-style:italic; font-weight:400; color:var(--orange); }
-  .lede { margin:24px 0 34px; max-width:52ch; color:var(--dim); font-size:1.05rem; }
+  .lede { margin:24px 0 34px; max-width:54ch; color:var(--dim); font-size:1.05rem; }
   .cta-row { display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+  .hero-note { margin-top:16px; font-size:0.85rem; color:var(--faint); }
   .video-frame { border:1px solid var(--line); background:#241614; }
   .video-frame iframe { display:block; width:100%; aspect-ratio:16/9; border:0; }
   .video-cap { padding:12px 16px; font-size:0.82rem; color:var(--faint); border-top:1px solid var(--line); }
@@ -57,13 +58,18 @@
   section { padding:88px 0; border-bottom:1px solid var(--line); }
   section.alt { background:var(--night2); }
   h2 { font-weight:500; font-size:clamp(1.7rem,3.6vw,2.6rem); letter-spacing:-0.01em; }
-  .sub { color:var(--dim); max-width:64ch; margin-top:12px; }
-  .stat-band { display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:center; }
-  .stat-nums { display:flex; gap:44px; margin-top:26px; }
+  .sub { color:var(--dim); max-width:66ch; margin-top:12px; }
+  .why-grid { display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:start; }
+  .why-points { margin-top:30px; }
+  .why-point { display:flex; gap:16px; align-items:baseline; padding:14px 0; border-bottom:1px solid rgba(107,69,48,0.45); }
+  .why-point .mark { color:var(--orange); font-family:"Fraunces",serif; font-size:1.1rem; flex:0 0 auto; }
+  .why-point strong { display:block; font-size:1rem; }
+  .why-point span.d { color:var(--dim); font-size:0.93rem; }
+  .stat-nums { display:flex; gap:44px; }
   .stat-num { font-family:"Fraunces",serif; font-weight:600; font-size:3rem; color:var(--orange); line-height:1; }
-  .stat-lab { color:var(--faint); font-size:0.9rem; margin-top:8px; max-width:22ch; }
-  .quotes { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
-  .qcard { border:1px solid var(--line); background:rgba(250,248,246,0.04); padding:28px 26px; font-family:"Fraunces",serif; font-style:italic; font-size:1.08rem; color:var(--cream); line-height:1.6; }
+  .stat-lab { color:var(--faint); font-size:0.9rem; margin-top:8px; max-width:24ch; }
+  .quotes { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:26px; }
+  .qcard { border:1px solid var(--line); background:rgba(250,248,246,0.04); padding:24px 22px; font-family:"Fraunces",serif; font-style:italic; font-size:1.02rem; color:var(--cream); line-height:1.6; }
 
   .areas { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:0; margin-top:44px; border-top:1px solid var(--line); }
   .area { padding:22px 24px 22px 0; border-bottom:1px solid var(--line); display:flex; gap:18px; align-items:baseline; }
@@ -78,23 +84,22 @@
   .fcard h3 { font-weight:500; font-size:1.15rem; margin-bottom:8px; }
   .fcard p { color:var(--dim); font-size:0.93rem; }
 
-  .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:46px; }
+  .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:46px; }
   .step { border-top:2px solid var(--orange); padding-top:22px; }
   .step .st { font-size:0.75rem; font-weight:600; letter-spacing:0.2em; color:var(--orange); text-transform:uppercase; }
-  .step h3 { font-weight:500; font-size:1.3rem; margin:10px 0 8px; }
-  .step p { color:var(--dim); font-size:0.94rem; }
+  .step h3 { font-weight:500; font-size:1.22rem; margin:10px 0 8px; }
+  .step p { color:var(--dim); font-size:0.93rem; }
 
-  .price-wrap { display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:start; }
-  .price-card { border:1px solid var(--orange); background:var(--night2); padding:36px 34px; }
-  .price-card .amt { font-family:"Fraunces",serif; font-weight:600; font-size:3.4rem; line-height:1; color:var(--cream); }
-  .price-card .amt .small { font-size:1.2rem; color:var(--faint); font-weight:400; }
-  .price-card .per { color:var(--faint); font-size:0.9rem; margin-top:6px; }
-  .price-card ul { list-style:none; margin:24px 0 28px; }
-  .price-card li { padding:9px 0 9px 30px; position:relative; color:var(--dim); font-size:0.95rem; border-bottom:1px solid rgba(107,69,48,0.4); }
-  .price-card li::before { content:"\2713"; position:absolute; left:4px; color:var(--orange); font-weight:700; }
-  .price-note { color:var(--faint); font-size:0.85rem; margin-top:14px; }
-  .price-side h2 { margin-bottom:16px; }
-  .price-side p { color:var(--dim); margin-bottom:14px; max-width:46ch; }
+  .free-wrap { display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:start; }
+  .free-card { border:1px solid var(--orange); background:var(--night2); padding:36px 34px; }
+  .free-card .amt { font-family:"Fraunces",serif; font-weight:600; font-size:3rem; line-height:1; color:var(--cream); }
+  .free-card .per { color:var(--faint); font-size:0.9rem; margin-top:8px; }
+  .free-card ul { list-style:none; margin:24px 0 28px; }
+  .free-card li { padding:9px 0 9px 30px; position:relative; color:var(--dim); font-size:0.95rem; border-bottom:1px solid rgba(107,69,48,0.4); }
+  .free-card li::before { content:"\2713"; position:absolute; left:4px; color:var(--orange); font-weight:700; }
+  .free-note { color:var(--faint); font-size:0.85rem; margin-top:14px; }
+  .free-side h2 { margin-bottom:16px; }
+  .free-side p { color:var(--dim); margin-bottom:14px; max-width:48ch; }
 
   .final { text-align:center; padding:96px 0; background:linear-gradient(180deg, var(--night2) 0%, var(--night3) 100%); border-bottom:0; }
   .final h2 { font-size:clamp(2rem,4.5vw,3.2rem); margin-bottom:14px; }
@@ -109,43 +114,45 @@
     nav.links, .nav-book { display:none; }
     .burger { display:flex; }
     .hero .in { grid-template-columns:1fr; gap:40px; padding-top:64px; padding-bottom:64px; }
-    .stat-band { grid-template-columns:1fr; gap:30px; }
-    .price-wrap { grid-template-columns:1fr; gap:36px; }
-    .steps { grid-template-columns:1fr; }
+    .why-grid, .free-wrap { grid-template-columns:1fr; gap:36px; }
+    .steps { grid-template-columns:1fr 1fr; }
     .area + .area { padding-left:0; border-left:0; }
   }
   @media (max-width:560px) {
     .wrap { padding-left:20px; padding-right:20px; }
     section { padding:64px 0; }
     .quotes { grid-template-columns:1fr; }
-    .stat-nums { gap:30px; }
+    .stat-nums { gap:30px; margin-top:26px; }
+    .steps { grid-template-columns:1fr; }
   }
 </style>
 </head>
 <body>
 <header>
   <div class="wrap nav">
-    <a class="wordmark" href="#top">
+    <a class="wordmark" href="index.html">
       <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="12" fill="none" stroke="#ff6b3d" stroke-width="1.6"/><path d="M4 16.5h18" stroke="#f0ead6" stroke-width="1.4"/><path d="M13 4.5a8.5 8.5 0 0 1 8.5 8.5" fill="none" stroke="#ff6b3d" stroke-width="2.4" stroke-linecap="round"/></svg>
       Epilogue Life
     </a>
     <nav class="links">
       <a href="#why">Why now</a>
-      <a href="#cover">What you cover</a>
-      <a href="#features">Features</a>
-      <a href="#pricing">Pricing</a>
+      <a href="#features">What you get</a>
+      <a href="#how">How it works</a>
+      <a href="#free">Free</a>
+      <a href="hire.html">Hire me</a>
     </nav>
-    <a class="btn small nav-book" href="https://app.epilogue.life/signup">Start your plan</a>
+    <a class="btn small nav-book" href="https://github.com/boktoday/epilogue-life-hermes-agent">Get the agent</a>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="menu">
     <div class="wrap">
       <a href="#why">Why now</a>
-      <a href="#cover">What you cover</a>
-      <a href="#features">Features</a>
-      <a href="#pricing">Pricing</a>
-      <a href="https://app.epilogue.life/login">Log in</a>
-      <a class="btn" href="https://app.epilogue.life/signup">Start your plan</a>
+      <a href="#features">What you get</a>
+      <a href="#how">How it works</a>
+      <a href="#free">Free</a>
+      <a href="hire.html">Hire me</a>
+      <a href="legal.html">Legal</a>
+      <a class="btn" href="https://github.com/boktoday/epilogue-life-hermes-agent">Get the agent</a>
     </div>
   </div>
 </header>
@@ -153,13 +160,14 @@
 <section class="hero" id="top">
   <div class="wrap in">
     <div>
-      <div class="kicker">Third age planner</div>
+      <div class="kicker">A free agent for your third age</div>
       <h1>Plan your <em>third age.</em></h1>
-      <p class="lede">Your comprehensive third age and end-of-life planning companion. Document your wishes, values and important information with dignity and care, so the people you love know exactly what matters to you.</p>
+      <p class="lede">Epilogue Life is a free, open agent for Hermes Agent that helps you document your wishes, values and the important information your family will one day need, with dignity and care. It asks the questions, keeps the plan, and hands you something your loved ones will treasure.</p>
       <div class="cta-row">
-        <a class="btn" href="https://app.epilogue.life/signup">Start your plan</a>
-        <a class="btn ghost" href="https://app.epilogue.life/login">I already have an account</a>
+        <a class="btn" href="https://github.com/boktoday/epilogue-life-hermes-agent">Get the agent, it's free</a>
+        <a class="btn ghost" href="#how">See how it works</a>
       </div>
+      <div class="hero-note">Built for <a href="https://hermes-agent.nousresearch.com" style="color:var(--warm);">Hermes Agent</a>. Runs on your own machine. No accounts, no subscriptions.</div>
     </div>
     <div class="video-frame">
       <iframe src="https://www.youtube.com/embed/IFnBtSfKkVo?rel=0&amp;modestbranding=1" title="Epilogue Life introduction" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -169,15 +177,21 @@
 </section>
 
 <section id="why" class="alt">
-  <div class="wrap">
-    <div class="stat-band">
-      <div>
-        <h2>Most people have a will. Few share a holistic plan.</h2>
-        <div class="stat-nums">
-          <div><div class="stat-num">60%</div><div class="stat-lab">of adults have a will</div></div>
-          <div><div class="stat-num">&lt;20%</div><div class="stat-lab">have documented their personal wishes for loved ones</div></div>
-        </div>
-        <p class="sub" style="margin-top:26px;">Don't let the most important information go unspoken. The conversations that matter most often happen too late, or never at all.</p>
+  <div class="wrap why-grid">
+    <div>
+      <h2>The earlier, the better.</h2>
+      <p class="sub">Most people only plan when a crisis forces it: a diagnosis, a fall, a hospital form with a signature line and no words ready. Epilogue Life is made to be started early, while your memory is sharp and your voice is strong, so everything that matters is captured calmly, completely, and in your own words.</p>
+      <div class="why-points">
+        <div class="why-point"><span class="mark">&#10022;</span><div><strong>You stay in charge.</strong><span class="d">Your wishes, your care preferences, your words. Decided by you, not guessed by others in a hard moment.</span></div></div>
+        <div class="why-point"><span class="mark">&#10022;</span><div><strong>Your family is never left guessing.</strong><span class="d">A complete plan answers the questions no one wants to ask twice: what you wanted, where things are, what to say at the table.</span></div></div>
+        <div class="why-point"><span class="mark">&#10022;</span><div><strong>The hard conversations happen while there is time.</strong><span class="d">Not in a hospital corridor. At your kitchen table, on your terms, a few gentle questions at a time.</span></div></div>
+        <div class="why-point"><span class="mark">&#10022;</span><div><strong>An accident or illness gives no warning.</strong><span class="d">You never know which Tuesday it will be. The plan only exists if it is made before that Tuesday.</span></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="stat-nums">
+        <div><div class="stat-num">60%</div><div class="stat-lab">of adults have a will</div></div>
+        <div><div class="stat-num">&lt;20%</div><div class="stat-lab">have documented their personal wishes for loved ones</div></div>
       </div>
       <div class="quotes">
         <div class="qcard">"I wish I had told them how proud I was."</div>
@@ -185,14 +199,34 @@
         <div class="qcard">"I wish I had told my children how I wanted to be cared for as I age."</div>
         <div class="qcard">"I never got the chance to explain what really mattered to me."</div>
       </div>
+      <p class="sub" style="margin-top:22px;">Every one of those sentences was said too late. The plan is how a family never has to say them.</p>
     </div>
   </div>
 </section>
 
-<section id="cover">
+<section id="features">
+  <div class="wrap">
+    <h2>What you get</h2>
+    <p class="sub">Everything a thoughtful plan needs, held in one private folder on your own machine.</p>
+    <div class="feat">
+      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>35 guided questions</h3><p>Thoughtful questions across seven areas of life: care, legal, healthcare, relationships, fulfilment, arrangements, digital legacy. Answer at your own pace, skip anything.</p></div>
+      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Your profile and your people</h3><p>A gentle onboarding builds who you are and who this plan serves: the profile, the loved ones, the values everything else hangs on.</p></div>
+      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>A few questions a morning</h3><p>A gentle daily rhythm asks two or three questions and saves your answers. Not overwhelming, never chasing. The plan quietly completes itself.</p></div>
+      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Wish I had said</h3><p>Guided letters and messages for the people you love, in your voice, with notes for when each one should be read.</p></div>
+      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Last days, handled with care</h3><p>Comfort and dignity preferences for the final chapter, captured gently and precisely: where, who, what matters, what to avoid.</p></div>
+      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Your life, reflected</h3><p>A reflection woven from your own answers, and memory playlists that capture the soundtrack of your life, moment by moment.</p></div>
+      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>The Epilogue Life Plan</h3><p>The finished document: a complete, beautifully printable plan you can hold, sign, keep, and hand to the people it is for.</p></div>
+      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Share by email or in hand</h3><p>Send the plan, or a single letter, through your own Gmail with one confirmed click. Or print it and place it in the drawer that matters.</p></div>
+      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Private by design</h3><p>Everything stays in your folder, on your own machine. Nothing is uploaded, tracked or synced. Run it fully offline if you like.</p></div>
+      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>A gentle hand when it is hard</h3><p>In grief or a hard moment the agent stops, cares, and points to real people and real helplines. An assistant, never a pretend companion.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="cover">
   <div class="wrap">
     <h2>Seven areas of a life, in your own words</h2>
-    <p class="sub">Guided questions across the seven areas that matter most, answered at your own pace, in your own way.</p>
+    <p class="sub">The question bank travels through the seven areas that matter most, in any order, at any pace.</p>
     <div class="areas">
       <div class="area"><span class="n">01</span><span class="t">End-of-life planning</span></div>
       <div class="area"><span class="n">02</span><span class="t">Legal and financial</span></div>
@@ -205,70 +239,53 @@
   </div>
 </section>
 
-<section id="features" class="alt">
-  <div class="wrap">
-    <h2>Everything you need to plan with confidence</h2>
-    <p class="sub">Thoughtful tools that help you document your wishes and create a meaningful plan for your loved ones.</p>
-    <div class="feat">
-      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Guided questions</h3><p>Answer 34+ thoughtfully crafted questions across seven key areas of planning, at your own pace.</p></div>
-      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Wish I had said</h3><p>Capture heartfelt messages for your loved ones: the love, wisdom and important words you want to share.</p></div>
-      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Last days planning</h3><p>Create detailed preferences for your final days to ensure comfort, dignity and peace.</p></div>
-      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Memory playlists</h3><p>Generate personal playlists that capture the soundtrack of your life's most meaningful moments.</p></div>
-      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>AI-powered reflection</h3><p>A personalised reflection that weaves your answers into a meaningful narrative.</p></div>
-      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Voice features</h3><p>Use speech to narrate your answers, and hear questions read aloud. Your voice, your words.</p></div>
-      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Voice cloning</h3><p>Have your messages read in your own voice, with just 60 seconds of audio to set it up.</p></div>
-      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>PDF export</h3><p>Export your complete plan as a beautifully formatted PDF to share with family and care providers.</p></div>
-      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Progress and keepsakes</h3><p>Stay motivated with achievement badges and gentle progress milestones as you complete your plan.</p></div>
-      <div class="fcard"><div class="mark"><svg width="22" height="22" viewBox="0 0 22 22"><path d="M11 1 L13 9 L21 11 L13 13 L11 21 L9 13 L1 11 L9 9 Z" fill="currentColor"/></svg></div><h3>Partner services</h3><p>Access partner offers for legal services, financial planning and healthcare advocacy when you need them.</p></div>
-    </div>
-  </div>
-</section>
-
-<section>
+<section id="how">
   <div class="wrap">
     <h2>How it works</h2>
+    <p class="sub">Four small steps, then a gentle rhythm that does the rest.</p>
     <div class="steps">
-      <div class="step"><div class="st">Step one</div><h3>Answer at your pace</h3><p>Work through the guided questions whenever suits you, in any order. Short sessions are fine; your progress saves as you go.</p></div>
-      <div class="step"><div class="st">Step two</div><h3>Reflect and refine</h3><p>Voice your answers, hear the questions read aloud, and let the reflection weave your words into something your family will treasure.</p></div>
-      <div class="step"><div class="st">Step three</div><h3>Share the plan</h3><p>Export the complete plan as a PDF and share it with the people you love, so your wishes are known and will be honoured.</p></div>
+      <div class="step"><div class="st">Step one</div><h3>Install Hermes Agent</h3><p>One command on any laptop, then chat from the app you already use. Hermes is free and open.</p></div>
+      <div class="step"><div class="st">Step two</div><h3>Get the agent</h3><p>Copy the Epilogue Life repo into your Hermes profile. It is free, and yours to keep and change.</p></div>
+      <div class="step"><div class="st">Step three</div><h3>Onboard gently</h3><p>A warm conversation builds your profile: who you are, who you love, what matters. Then the questions begin.</p></div>
+      <div class="step"><div class="st">Step four</div><h3>Answer a little, often</h3><p>Two or three questions a morning, saved as you go. When you are ready, the plan is built and shared.</p></div>
     </div>
   </div>
 </section>
 
-<section id="pricing" class="alt">
-  <div class="wrap">
-    <div class="price-wrap">
-      <div class="price-side">
-        <h2>Simple, transparent pricing</h2>
-        <p>One complete plan for everything. No tiers, no surprises. Your legacy deserves more than just a will.</p>
-        <p>Join the people who have found peace of mind through thoughtful planning.</p>
-      </div>
-      <div class="price-card">
-        <div class="serif" style="font-size:1.25rem; margin-bottom:14px;">Complete Plan</div>
-        <div class="amt">$90<span class="small">.00</span></div>
-        <div class="per">Annual subscription, just $7.50 per month</div>
-        <ul>
-          <li>Access to all 34+ guided questions</li>
-          <li>Create unlimited custom questions</li>
-          <li>AI-powered reflection generation</li>
-          <li>Voice cloning and speech features</li>
-          <li>PDF export of your complete plan</li>
-          <li>365 days of updates and support</li>
-        </ul>
-        <a class="btn" href="https://app.epilogue.life/signup" style="width:100%; text-align:center;">Start your plan today</a>
-        <div class="price-note">30-day money-back guarantee. Cancel anytime.</div>
-      </div>
+<section id="free" class="alt">
+  <div class="wrap free-wrap">
+    <div class="free-side">
+      <h2>Free, and it stays that way</h2>
+      <p>The companion itself costs nothing: the agent is source-available and free to use, the repo is the download, and your data never leaves your machine.</p>
+      <p>If you want company on the journey, or this brought to your family, workplace or community group, that is what hiring me is for.</p>
+      <a class="btn ghost" href="hire.html">See hire options</a>
+    </div>
+    <div class="free-card">
+      <div class="serif" style="font-size:1.25rem; margin-bottom:14px;">The complete agent</div>
+      <div class="amt">Free</div>
+      <div class="per">For Hermes Agent, forever</div>
+      <ul>
+        <li>35 guided questions, seven life areas</li>
+        <li>Onboarding, profile and loved ones</li>
+        <li>Gentle daily question schedule</li>
+        <li>Letters, reflection, last days, playlists</li>
+        <li>The printable Epilogue Life Plan</li>
+        <li>Email sharing through your own Gmail</li>
+        <li>Runs privately, even fully offline</li>
+      </ul>
+      <a class="btn" href="https://github.com/boktoday/epilogue-life-hermes-agent" style="width:100%; text-align:center;">Get the agent</a>
+      <div class="free-note">No accounts. No subscription. Nothing to cancel.</div>
     </div>
   </div>
 </section>
 
 <section class="final">
   <div class="wrap">
-    <h2>Ready to start planning?</h2>
-    <p class="sub">Create your account today, and give your loved ones the gift of knowing exactly what matters to you.</p>
+    <h2>Start early. Thank yourself later.</h2>
+    <p class="sub">The best time to plan your third age is while it is still just planning. A few questions a morning is enough.</p>
     <div class="cta-row" style="justify-content:center;">
-      <a class="btn" href="https://app.epilogue.life/signup">Start your plan</a>
-      <a class="btn ghost" href="https://app.epilogue.life/login">Log in</a>
+      <a class="btn" href="https://github.com/boktoday/epilogue-life-hermes-agent">Get the agent, it's free</a>
+      <a class="btn ghost" href="hire.html">Hire me to help</a>
     </div>
   </div>
 </section>
@@ -276,7 +293,13 @@
 <footer>
   <div class="wrap row">
     <div class="fine">Epilogue Life. Employ AI Pty Ltd. ABN: 21 672 202 612. Helping you plan with dignity and care. &copy; 2026</div>
-    <div><a href="https://app.epilogue.life/login">Log in</a> &nbsp;&middot;&nbsp; <a href="https://app.epilogue.life/signup">Sign up</a></div>
+    <div>
+      <a href="https://github.com/boktoday/epilogue-life-hermes-agent">The repo</a> &nbsp;&middot;&nbsp;
+      <a href="https://hermes-agent.nousresearch.com">Hermes Agent</a> &nbsp;&middot;&nbsp;
+      <a href="hire.html">Hire me</a> &nbsp;&middot;&nbsp;
+      <a href="legal.html">Legal</a> &nbsp;&middot;&nbsp;
+      <a href="https://app.epilogue.life">Prefer the hosted app?</a>
+    </div>
   </div>
 </footer>
 
