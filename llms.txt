@@ -1,0 +1,32 @@
+# Epilogue Life
+
+Epilogue Life is a free, open planning companion for your third age. It is an agent for Hermes Agent (from Nous Research) that asks a few gentle questions each morning and builds a complete, printable plan of your wishes, values and the important information your family will one day need, so the people you love are never left guessing. Everything runs on the user's own machine: no accounts, no subscriptions, no data leaving the device.
+
+## What this site offers
+
+- The Epilogue Life agent: FREE, source-available under the PolyForm Noncommercial License 1.0.0, free to use with credit for any noncommercial purpose. Get it at https://github.com/boktoday/epilogue-life-hermes-agent
+- Requires Hermes Agent, which is free: https://hermes-agent.nousresearch.com
+- 35 guided questions across seven areas of life: end-of-life planning, legal and financial, healthcare decisions, relationships and legacy, personal fulfilment, final arrangements, and digital and personal assets.
+- A gentle daily rhythm: two or three questions a morning, saved as you go. Never overwhelming.
+- The finished output: The Epilogue Life Plan, complete and beautifully printable, made to be handed to the people it is for. Letters and messages can be shared through the user's own email with one confirmed click.
+- Optional human help: guided sessions for individuals, families and groups can be hired at https://www.epilogue.life/hire.html
+- Privacy by design: everything stays on the user's machine. Nothing uploaded, tracked or synced. The agent can run fully offline.
+
+## Key pages
+
+- Landing page: https://www.epilogue.life/
+- Hire options: https://www.epilogue.life/hire.html
+- Legal, terms and privacy: https://www.epilogue.life/legal.html
+
+## Important disclaimers
+
+- Epilogue Life is a planning companion. It is not legal, medical, financial or therapeutic advice. For decisions with legal effect, consult a qualified professional in your jurisdiction.
+- In an emergency or crisis, contact your local emergency number or a crisis line.
+- The website and software are provided as-is and as-available, without warranties of any kind.
+- The software is licensed under the PolyForm Noncommercial License 1.0.0: free to use, change and share for any noncommercial purpose, with credit. Commercial use requires a separate arrangement.
+- Operated by The AI Champion, ABN 60 118 175 136 (Australia).
+
+## Brand
+
+- Name: Epilogue Life, by Brendan O'Keefe, founder of The AI Champion.
+- Palette: cream #e7d7c1, brick #bf4342, oxblood #8c1c13, ink #3c2a25.
